@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/registrationback"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Registration_page"
+    tools:showIn="@layout/activity_registration_page">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="50dp"
+       >
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/roundededeges"
+            android:hint="NAME"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="50dp"
+        >
+
+        <EditText
+            android:id="@+id/register_gcuid"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/roundededeges"
+            android:hint="GCU ID"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="50dp"
+        >
+
+        <EditText
+            android:id="@+id/register_gcuuser"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/roundededeges"
+            android:hint="GCU USERNAME"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:layout_marginLeft="50dp"
+   >
+
+    <EditText
+                android:id="@+id/register_gcupass"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:background="@drawable/roundededeges"
+                android:hint="GCU PASSWORD"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+        </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="59dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundededeges"
+            android:text="Gender:"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/male_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundededeges"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundededeges"
+            android:text="Female" />
+    </RadioGroup>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="rebutton"
+        android:background="@drawable/buttonroundededges"
+        android:layout_marginLeft="110dp"
+        android:text="Register Now"
+        android:textSize="20dp"/>
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>
